@@ -1,14 +1,15 @@
-/* body{
-    display: flex;
-    flex-direction: column;
-} */
-
 .carousel-inner{
-        padding: 2rem 4rem;
+    padding: 2rem 4rem;
 }
 
-.carousel-item{
-        height: 75vh;
+.carousel .carousel-item{
+    height: 75vh;
+  }
+  
+.carousel-item img{
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .main-card-cantainer{
@@ -19,21 +20,19 @@
 }
 
 .card-cantainer{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 .main-card-cantainer h1{
-        padding: 1rem;
+    padding: 1rem;
 }
 
 .card p{
-        display: inline-block;
+    display: inline-block;
 }
 .card{
-        display: inline-block;
-        /* background-color: black; */
-        /* color: white; */
+    display: inline-block;
 }
 
 
@@ -146,4 +145,57 @@
     font-size: 1.2rem;
     margin: 40px 10px 10px;
     padding: 10px 14px 20px 10px;
+}
+
+
+/********** large devices only **********/
+@media (min-width: 1199px){
+    .carousel-inner{
+        padding: 2rem 4rem;
+        height: 78vh;
+    }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px){
+    /* .carousel-item img{
+        height: 600px;
+    } */
+    .carousel-inner{
+        padding: 10px 5px;
+        height: 45vh;
+    }
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px){
+    /* .carousel-item img{
+        height: 500px;
+    } */
+    .carousel-inner{
+        padding: 10px 5px;
+        height: 50vh;
+    }
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px){
+    /* .carousel-item img{
+        height: 400px;
+    } */
+    .carousel-inner{
+        padding: 10px 5px;
+        height: 40vh;
+    }
+}
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px){
+    /* .carousel-item img{
+        height: 200px;
+    } */
+    .carousel-inner{
+        padding: 10px 5px;
+        height: 20vh;
+    }   
 }
