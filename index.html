@@ -19,17 +19,7 @@
       google.charts.load('current', {'packages':['corechart']});
       google.charts.setOnLoadCallback(drawChart);
 
-      function drawChart() {
-
-        var data = google.visualization.arrayToDataTable([
-          ['Product', 'Consumption of Electricity in units'],
-          ['9w LED Bulb',0.009],
-          ['12w LED bulb',0.01],
-          ['10W T-Bulb',0.01],
-          ['Batton LIght', 0.02],
-          ['5w LED Panel',  0.005]
-        ]);
-
+      
         var options = {
           title: 'Power Consuption of Our Product per Hour (KWH)'
         };
